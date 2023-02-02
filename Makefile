@@ -1,4 +1,4 @@
-VERSION := "v2.2.0-rc3-modified"
+VERSION := v2.2.0-rc3-modified
 COMMIT  := $(shell git log -1 --format='%H')
 GAIA_VERSION := v7.0.1
 AKASH_VERSION := v0.16.3
