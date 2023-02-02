@@ -200,8 +200,8 @@ func (cc *CosmosProvider) TrustingPeriod(ctx context.Context) (time.Duration, er
 	// We don't want to lose precision if the duration is a very long duration
 	// by converting int64 to float64.
 	// Use integer math the whole time, first reducing by a factor of 100
-	// and then re-growing by 85x.
-	tp := res.UnbondingTime / 100 * 85
+	// and then re-growing by 66x.
+	tp := res.UnbondingTime / 100 * 66
 
 	// And we only want the trusting period to be whole hours.
 	return tp.Truncate(time.Hour), nil
